@@ -36,9 +36,9 @@ verbose = True     # Show output in console
 
 # Setup the environment for pre-processing
 if show_game:
-    env = gym.make('SuperMarioBros-1-1-v0', apply_api_compatibility = True, render_mode = 'human')
+    env = gym.make('SuperMarioBros-1-1-v3', apply_api_compatibility = True, render_mode = 'human')
 else:
-    env = gym.make('SuperMarioBros-1-1-v0', apply_api_compatibility = True)
+    env = gym.make('SuperMarioBros-1-1-v3', apply_api_compatibility = True)
 
 
 # Wrap the environment with the pre-processing functions
