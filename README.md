@@ -1,4 +1,5 @@
 # Introduction
+![mario][mario.png]
 This project aims to train an agent to play Super Mario Bros using reinforcement learning (RL). The goal is to enable the agent to navigate through the game's first level (World 1-1) by learning optimal actions through trial and error. The challenge lies in processing high-dimensional visual inputs (game frames) and making real-time decisions in a dynamic environment, which makes RL a suitable approach for this task.
 
 ---
