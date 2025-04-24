@@ -6,7 +6,7 @@ This project aims to train an agent to play Super Mario Bros using reinforcement
 
 ---
 
-#Project Pipeline
+# Project Pipeline
 The project follows a structured pipeline to preprocess the environment, train the agent, and evaluate its performance:
 
 - **Environment Setup**: The Super Mario Bros environment is set up using the `gym-super-mario-bros` and `nes-py` libraries. The action space is simplified to two actions: "right" and "right + jump" to reduce complexity.
@@ -24,7 +24,7 @@ The project follows a structured pipeline to preprocess the environment, train t
 
 ---
 
-#About the Chosen Model
+# About the Chosen Model
 The model architecture is a custom-designed actor-critic network, implemented from scratch using PyTorch:
 
 - **Actor Network**: A `CNN` that processes the preprocessed game frames (4 stacked 84x84 grayscale images) and outputs action probabilities for the simplified action space.
@@ -34,7 +34,7 @@ The model architecture is a custom-designed actor-critic network, implemented fr
 
 ---
 
-#Installation
+# Installation
 To run this project, install the required dependencies listed in requirements.txt:
 ```bash
 pip install -r requirements.txt
@@ -44,7 +44,7 @@ Ensure you have Python 3.8+ installed. The project uses PyTorch for model implem
 
 ---
 
-#Usage
+# Usage
 
 1. Clone the repository: 
 ```bash
@@ -66,12 +66,12 @@ python main.py
 
 ---
 
-#Results
+# Results
 Training progress is logged in `model/training_data.csv`, and model checkpoints are saved in `model/checkpoints/`. The agent's performance can be evaluated by monitoring the average reward over episodes, with higher rewards indicating better navigation through the level.
 
 ---
 
-#Future Improvements
+# Future Improvements
 - Experiment with different hyperparameters (e.g., learning rates, batch sizes) to improve performance.
 - Expand the action space to include more actions (e.g., "left", "jump") for greater flexibility.
 - Explore other RL algorithms like DQN or A3C for comparison.
@@ -79,5 +79,5 @@ Training progress is logged in `model/training_data.csv`, and model checkpoints 
 
 ---
 
-#Acknowledgments
+# Acknowledgments
 This project builds on the gym-super-mario-bros library for the game environment and uses PyTorch for model implementation. Inspiration was drawn from standard RL practices and PPO implementations in academic literature.
